@@ -81,23 +81,11 @@ int main()
 			
 		}
 		print(a);
-		//MemoryManager snake(2);
-		////std::cout << sizeof(bool);
-		////void* arr = ::operator new(8);
-		//void* arr = snake.alloc(8);
-		//void* arr2 = snake.alloc(8);
-		//std::cout << arr << std::endl;
-		//int* arrI = static_cast<int*>(arr);
-		//int* arrI2 = static_cast<int*>(arr2);
-		//new(arrI) int[2] {3, 3};
-		//new(arrI2) int[2] {9, 5};
-
-		//std::cout << arrI << std::endl;
-		//for (int i = 0; i < 2; i++) { std::cout << arrI[i] << std::endl; }
 	}
 	catch(std::exception& ex)
 	{
 		std::cerr << ex.what();
+		std::cout << "ERROR";
 	}
 	std::cout << _CrtDumpMemoryLeaks();
 }
